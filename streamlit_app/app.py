@@ -17,7 +17,7 @@ st.set_page_config(
 
 @st.cache_data
 def load_data():
-    return pd.read_excel("../data/heart_disease_cleaned.xlsx")
+    return pd.read_excel("data/heart_disease_cleaned.xlsx")
 
 
 heart_df = load_data()
@@ -28,12 +28,12 @@ heart_df = load_data()
 @st.cache_resource
 def load_model():
     return (
-        joblib.load("../models/heart_stroke_model.pkl"),
-        joblib.load("../models/scaler.pkl"),
-        joblib.load("../models/gender_encoder.pkl"),
-        joblib.load("../models/education_encoder.pkl"),
-        joblib.load("../models/exercise_encoder.pkl"),
-        joblib.load("../models/agegroup_encoder.pkl"),
+        joblib.load("models/heart_stroke_model.pkl"),
+        joblib.load("models/scaler.pkl"),
+        joblib.load("models/gender_encoder.pkl"),
+        joblib.load("models/education_encoder.pkl"),
+        joblib.load("models/exercise_encoder.pkl"),
+        joblib.load("models/agegroup_encoder.pkl"),
     )
 
 
