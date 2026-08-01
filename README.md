@@ -10,38 +10,6 @@ A Machine Learning-powered web application that predicts an individual's heart d
 
 ---
 
-## 📂 Project Structure
-
-```text
-heart-disease-prediction-ml/
-│
-├── data/
-│   ├── heart_disease_cleaned.xlsx
-│   └── heart_disease_raw.csv
-│
-├── models/
-│   ├── heart_stroke_model.pkl
-│   ├── scaler.pkl
-│   ├── gender_encoder.pkl
-│   ├── education_encoder.pkl
-│   ├── exercise_encoder.pkl
-│   └── agegroup_encoder.pkl
-│
-├── notebooks/
-│   ├── data_preprocessing.ipynb
-│   ├── machine_learning.ipynb
-│   └── report_eda.html
-│
-├── streamlit_app/
-│   └── app.py
-│
-├── README.md
-├── requirements.txt
-└── .gitignore
-```
-
----
-
 ## 📌 Project Overview
 
 This project analyzes a heart disease dataset and builds a Machine Learning model to predict whether a patient is at risk of heart disease based on demographic, lifestyle, and clinical features.
