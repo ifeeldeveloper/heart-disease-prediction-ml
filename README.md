@@ -1,27 +1,77 @@
 # ❤️ Heart Disease Prediction using Machine Learning
 
+A Machine Learning-powered web application that predicts an individual's heart disease risk based on demographic, lifestyle, and clinical information. The project demonstrates a complete end-to-end data science workflow, from data preprocessing and model development to cloud deployment using Streamlit.
+
+---
+
+## 🌐 Live Demo
+
+🔗 https://predicthearthealth.streamlit.app/
+
+---
+
+## 📂 Project Structure
+
+```text
+heart-disease-prediction-ml/
+│
+├── data/
+│   ├── heart_disease_cleaned.xlsx
+│   └── heart_disease_raw.csv
+│
+├── models/
+│   ├── heart_stroke_model.pkl
+│   ├── scaler.pkl
+│   ├── gender_encoder.pkl
+│   ├── education_encoder.pkl
+│   ├── exercise_encoder.pkl
+│   └── agegroup_encoder.pkl
+│
+├── notebooks/
+│   ├── data_preprocessing.ipynb
+│   ├── machine_learning.ipynb
+│   └── report_eda.html
+│
+├── streamlit_app/
+│   └── app.py
+│
+├── README.md
+├── requirements.txt
+└── .gitignore
+```
+
+---
+
 ## 📌 Project Overview
 
-This project analyzes a heart disease dataset and builds a machine learning model to predict whether a patient is at risk of heart disease based on demographic, lifestyle, and clinical features.
+This project analyzes a heart disease dataset and builds a Machine Learning model to predict whether a patient is at risk of heart disease based on demographic, lifestyle, and clinical features.
 
-The project demonstrates the complete data science workflow, including data preprocessing, exploratory data analysis (EDA), machine learning model development, model evaluation, and deployment using Streamlit.
+The project demonstrates the complete data science workflow, including:
+
+- Data preprocessing
+- Exploratory Data Analysis (EDA)
+- Feature engineering
+- Machine Learning model development
+- Model evaluation
+- Interactive dashboard development
+- Cloud deployment using Streamlit Community Cloud
 
 ---
 
 ## 🎯 Objectives
 
-- Clean and preprocess the dataset.
-- Perform exploratory data analysis (EDA).
-- Visualize important health indicators.
-- Train and compare multiple machine learning models.
-- Select the best-performing model.
-- Deploy the trained model using Streamlit for real-time predictions.
+- Clean and preprocess the dataset
+- Perform Exploratory Data Analysis (EDA)
+- Visualize important health indicators
+- Train and compare multiple Machine Learning models
+- Select the best-performing model
+- Deploy the trained model as an interactive web application
 
 ---
 
 ## 📊 Dataset Features
 
-The dataset contains demographic, lifestyle, and clinical information, including:
+The dataset contains demographic, lifestyle, and clinical information including:
 
 - Gender
 - Age
@@ -41,7 +91,7 @@ The dataset contains demographic, lifestyle, and clinical information, including
 - Exercise Frequency
 - Age Group (Feature Engineered)
 
-Target Variable:
+**Target Variable**
 
 - Heart Disease / Stroke Risk (`heartStroke`)
 
@@ -88,43 +138,44 @@ The following classification algorithms were trained and evaluated:
 - Random Forest Classifier
 - K-Nearest Neighbors (KNN)
 
-Balanced class weights were also explored for suitable models to address class imbalance.
+Balanced class weights were also explored to address class imbalance.
+
+The best-performing model was selected, serialized using **Joblib**, and integrated into the Streamlit application for real-time predictions.
 
 ---
 
-## 📊 Model Evaluation Metrics
+## 📊 Model Evaluation
 
-Models were compared using:
+Models were evaluated using:
 
 - Accuracy
 - Precision
 - Recall
 - F1-Score
 
-The best-performing model was selected and saved using Joblib for deployment.
+The best-performing model was selected for deployment.
 
 ---
 
 ## 🌐 Streamlit Application
 
-The deployed Streamlit application provides two modules:
+The deployed application consists of two modules.
 
 ### 📊 Dashboard
 
 - Interactive filters
-- KPI metrics
-- Visualizations
+- KPI summary metrics
+- Data visualizations
 - Filtered dataset view
 
 ### 🤖 Prediction
 
-Users can enter patient information, and the application:
+Users can enter patient information, and the application will:
 
-- Processes the inputs
-- Encodes categorical variables
-- Scales numerical features
-- Predicts heart disease risk
-- Displays prediction probability
+- Encode categorical variables
+- Scale numerical features
+- Predict heart disease risk
+- Display prediction probability
 
 ---
 
@@ -149,39 +200,54 @@ Users can enter patient information, and the application:
 - Scikit-learn
 - Joblib
 
-### Deployment
+### Web Framework
 
 - Streamlit
 
+### Version Control
+
+- Git
+- GitHub
+
+### Deployment
+
+- Streamlit Community Cloud
+
 ---
 
-## 🚀 How to Run the Project
+## 🚀 Run Locally
 
-### Clone the repository
+### 1. Clone the repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/ifeeldeveloper/heart-disease-prediction-ml.git
 ```
 
-### Install dependencies
+### 2. Navigate to the project folder
+
+```bash
+cd heart-disease-prediction-ml
+```
+
+### 3. Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Run Streamlit
+### 4. Launch the application
 
 ```bash
-cd streamlit_app
-
-python -m streamlit run app.py
+python -m streamlit run streamlit_app/app.py
 ```
 
 ---
 
 ## ⚠️ Disclaimer
 
-This project was developed for educational and learning purposes. The prediction generated by the machine learning model is intended for demonstration only and should not be considered a medical diagnosis or professional healthcare advice.
+This project was developed for educational and learning purposes only.
+
+The predictions generated by the Machine Learning model are intended for demonstration purposes and should **not** be considered medical advice, diagnosis, or a substitute for consultation with qualified healthcare professionals.
 
 ---
 
@@ -189,6 +255,20 @@ This project was developed for educational and learning purposes. The prediction
 
 **Jagadish Bhatta**
 
-- BIT Graduate
-- Aspiring Data Analyst
-- Python | SQL | Machine Learning | Data Visualization
+BIT Graduate | Aspiring Data Professional
+
+**Skills**
+
+- Python
+- SQL
+- Data Analysis
+- Machine Learning
+- Data Visualization
+- Streamlit
+- Scikit-learn
+
+---
+
+## 📄 License
+
+This project is intended for educational and portfolio purposes.
